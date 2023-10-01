@@ -38,17 +38,15 @@ How to Run
     ```
     
 2.  Navigate into the project directory and install dependencies:
-    
-    sql
-    
-    ```sql
-    cd all-in-one-generative-ai-showcase
+        
+    ```bash
+    cd /generative-ai-showcase
     pip install -r requirements.txt
     ```
     
 3.  Run the application:
     
-    `python app.py`
+    `python3 -m app`
     
 4.  Open your web browser and go to `http://localhost:7860` to interact with the application.
 
