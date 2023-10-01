@@ -1,0 +1,11 @@
+gradio
+transformers
+python-dotenv
+ipykernel
+torch
+diffusers
+accelerate
+text_generation
+sentencepiece
+optimum
+auto-gptq
