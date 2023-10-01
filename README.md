@@ -1,3 +1,9 @@
+---
+title: generative-ai-showcase
+app_file: app.py
+sdk: gradio
+sdk_version: 3.45.2
+---
 All-in-One Generative AI Showcase
 =================================
 

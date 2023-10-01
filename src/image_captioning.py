@@ -12,13 +12,12 @@ import numpy as np
 import io
 import base64 
 
-
 class ImageCaptioning:
     def __init__(self):
         # Initialize the pipeline for image captioning
         self.pipeline = pipeline("image-to-text", model="Salesforce/blip-image-captioning-base")
         # Load the 'success.png' image for comparison
-        self.success_image = Image.open("gradio_generative_ai_app/example_images/success.png")
+        self.success_image = Image.open("example_images/success.png")
 
     def image_to_base64_str(self, pil_image):
         byte_arr = io.BytesIO()
@@ -50,5 +49,5 @@ class ImageCaptioning:
             title="Image Captioning with BLIP",
             description="Caption any image using the BLIP model",
             allow_flagging="never",
-            examples=["gradio_generative_ai_app/example_images/success.png", "gradio_generative_ai_app/example_images/cartoon.png"]
+            examples=["example_images/success.png", "example_images/cartoon.png"]
         )

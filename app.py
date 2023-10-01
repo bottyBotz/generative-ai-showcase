@@ -82,16 +82,16 @@ class GradioApp:
                 self.ner.interface()
             with gr.Tab("Image Captioning"):
                 self.img_captioning.interface()
-            with gr.Tab("Image Generation"):
-                pass
-                #image_generation_interface()
-                # # Image Generation!
-                # get_completion = pipeline("image-to-image-ca", model="valhalla/image-to-image-agent-clevr")
-                # gr.Interface(fn=get_completion,
-                #     inputs=[gr.Image(label="Input Image")],
-                #     outputs=[gr.Image(label="Generated Image")],
-                #     title="Image Generation with valhalla/image-to-image-agent-clevr",
-                #     description="Generate any image using the `valhalla/image-to-image-agent-clevr` model under the hood!")
+            #with gr.Tab("Image Generation"):
+            #    pass
+            #image_generation_interface()
+            # # Image Generation!
+            # get_completion = pipeline("image-to-image-ca", model="valhalla/image-to-image-agent-clevr")
+            # gr.Interface(fn=get_completion,
+            #     inputs=[gr.Image(label="Input Image")],
+            #     outputs=[gr.Image(label="Generated Image")],
+            #     title="Image Generation with valhalla/image-to-image-agent-clevr",
+            #     description="Generate any image using the `valhalla/image-to-image-agent-clevr` model under the hood!")
             # Launch the Gradio App
             demo.launch(share=share)
 
